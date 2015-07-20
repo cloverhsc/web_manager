@@ -1,0 +1,333 @@
+@charset "utf-8";
+/*====================
+	banner
+====================*/
+section#banner{
+	text-align: center;
+}
+section#banner div.inner{
+	max-width:100%;
+}
+section#banner div.inner h2{
+	position: relative;
+	font-size: 30px;
+	color:#fff;
+	margin-top:-25%;
+	text-transform: uppercase;
+	margin-bottom:5px;
+	font-family: Arial,sans-serif,Verdana;
+	text-shadow: 0px 0px 20px #BDB8B8;
+}
+section#banner div.inner p{
+	font-family: sans-serif,Arial,Verdana;
+	font-size: 17px;
+	color: rgba(255, 255, 255, 0.81);
+	margin:5%  0px;
+	text-shadow: 0px 0px 20px #BDB8B8;
+}
+
+section#banner img{
+	width:100%;
+	height:30%;
+}
+
+section#banner ul.act{
+	display: none;
+}
+section#banner ul.phone{
+	width:100%;
+	overflow: auto;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top:0px;
+}
+section#banner ul.phone li{
+	float:left;
+	vertical-align: middle;
+	width:50%;
+	
+}
+section#banner ul.phone li.more{
+	border-left:1px solid #FFF
+}
+section#banner ul.phone li a{
+	display: block;
+	color:#fff;
+	text-decoration: none;
+	font-size:1.2em;
+	padding:10px;
+	letter-spacing: 7px;
+	background-color: #629DD1;
+}
+
+/*=============================
+Content  
+=============================*/
+section#content{
+	width:100%;
+	text-align: center;
+	margin:50px 0px ;
+}
+section#content div.container{
+	max-width: 90%;
+	margin:0 auto;
+
+}
+section#content div.container div.box{
+	border:1px solid #E8E8E8;
+	border-radius: 7px;
+	margin-bottom: 30px;
+}
+	section.function{
+		margin:50px 0px;
+	}
+
+	section.function h3{
+		font-size:1.2em;
+		font-weight: normal;
+		letter-spacing: 0.2em;
+		color: #666F77;
+		margin: 10px;
+
+	}
+
+	section.function p{
+		font-size:1em;
+		font-weight: normal;
+		color: #666F77;
+		margin-top: 30px;
+
+	}
+/*=============================
+introduce
+==============================*/
+section#introduce{
+	background-color: #6699CC;
+	width: 100%;
+	text-align: center;
+}
+section#introduce div.major{
+	display: inline-block;
+	margin:40px 0 10px 0;
+}
+	section#introduce div.major h2{
+		font-size:1.5em;
+		color:#fff;
+		font-weight: normal;
+		letter-spacing: 0.2em;
+		margin: 25px 0px;
+	}
+	section#introduce div.major p{
+		font-size:1.3em;
+		color:rgba(255,255,255,0.7);
+		font-weight: normal;
+		margin: 15px 10px;
+		line-height: 1.5em;
+	}
+
+section#introduce div.container{
+	width:100%;
+	padding-bottom: 20px;
+}
+section#introduce div.container section{
+		width:100%;
+		border-top:1px solid #C1CCCC;
+	}
+section#introduce div.container img{
+	width:100%;
+	margin-top:20px;
+}
+section#introduce div.container section h3{
+	font-size:1.3em;
+	color:#fff;
+	font-weight: normal;
+	margin: 20px 10px  0px 10px;
+	line-height: 1.5em;
+}
+	div.container section a{
+		text-decoration: none;
+		display: block;
+		margin:15px auto;
+		font-size: 1em;
+		max-width:30%;
+		box-shadow: 0px 0px 0px 1px rgba(144, 144, 144, 0.75) inset;
+		padding: 10px;
+		border-radius: 5px;
+		color: #fff;
+		font-weight: normal;
+		background-color: #6699CC;
+	}
+
+/****************************************
+Tablet resolution:769px~960px;
+****************************************/
+@media only screen and (min-width:769px){
+	/*======================================
+		banner
+	========================================*/
+	#pageContent{
+		position:relative;
+		top:50px;
+	}
+	ul.phone{
+		display: none;
+	}	
+	
+	section#banner div.inner ul.act{
+		display: inline-block;
+		width:100%;
+	}
+	section#banner div.inner h2{
+		font-size:40px;
+		font-weight: normal;
+		letter-spacing: 0.1em;
+	}
+
+	section#banner div.inner p{
+		font-size: 23px;
+		font-weight: normal;
+		margin:10px 0px;
+	}
+	section#banner ul.act li{
+		display: inline-block;
+		vertical-align: middle;
+		width: 20%;
+		margin: 20px 20px;
+		background-color: #6699CC;
+		border-radius: 6px;
+		
+	}
+
+	section#banner ul.act li.more{
+		background-color:rgba(255,255,255,0);
+		box-shadow: 0px 0px 0px 1px rgba(144, 144, 144, 0.75) inset;
+	}
+		
+	section#banner ul.act li a{
+		display: block;
+		color:#fff;
+		text-decoration: none;
+		letter-spacing: 0.1em;
+		font-size: 1.3em;
+		width:100%;
+		padding:15px 0px;
+		z-index: 10;
+	}
+
+	section#banner ul.act li.more:hover{
+		background-color:rgba(255,255,255, 0.2);
+		/*box-shadow: 0px 0px 0px 1px rgba(144, 144, 144, 0.75) inset;*/
+	}
+/*===================================
+Content
+===================================*/
+	section#content{
+		overflow: auto;
+		margin:0px 0px;
+	}
+	section#content div.container{
+		margin-top:5%;
+	}
+	section#content  div.container div.box{
+		width:40%;
+		float: left;
+		margin:0px 5% 5% 5%;
+	}
+/*=================================
+introduce
+=================================*/
+	section#introduce{
+		overflow: auto;
+	}
+	section#introduce div.major{
+		margin:10px 0px 10px;
+	}
+	section#introduce div.container section{
+		float:left;
+		width:50%;
+	}
+	section#introduce div.container section h3{
+		font-size: 1.2em;
+		height:50px;
+	}
+	section#introduce div.container section{
+		border: 0px;
+	}
+
+}
+
+/***************************************
+resolution over then 960px
+***************************************/
+@media only screen and (min-width: 961px){
+
+	/*======================================
+		banner
+	========================================*/
+	section#banner div.inner h2{
+		font-size: 60px;
+		font-weight:normal;
+		margin-top:-24%;
+		letter-spacing: 0.1em;
+		margin-bottom:1%;
+		text-shadow: 0px 0px 30px #BDB8B8;
+	}
+
+	section#banner div.inner p{
+		font-size: 30px;
+		letter-spacing: 0.1em;
+		margin-bottom: 1%;
+	}
+	section#banner ul.phone{
+		display:none;
+	}
+	section#banner ul.act{
+		list-style: none;
+		margin-right: auto;
+		max-width: 960px;
+		margin-left: auto;
+	}
+
+	section#banner ul.act li{
+		max-width: 300px;
+		margin-top: 20px;
+	}
+		
+	section#banner ul.act li a{
+		letter-spacing: 5px;
+		font-size: 1.5em;
+	}
+
+	section#banner ul.act li:hover{
+		transition:0.5s;
+		background-color:#76A9D7;
+	}
+	section#banner ul.act li.more:hover{
+		transition:0.5s;
+		background-color:rgba(144, 144, 144, 0.7);
+	}
+/*====================================
+Content
+====================================*/
+	section#content{
+		margin-bottom:20px;
+	}
+	section#content div.container{
+		margin-top:20px;
+	}
+	section#content  div.container div.box{
+		max-width:30%;
+		margin:10px ;
+	}
+/*=================================
+introduce
+=================================*/
+section#introduce div.container a{
+	max-width:20%;
+	margin-bottom:50px;
+}
+section#introduce div.container section p a:hover{
+	transition:0.5s;
+	background-color: rgba(255,255,255, 0.27);
+}
+}

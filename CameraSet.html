@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NEZHA</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/nav_footer.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css"> 
+		<link rel="stylesheet" href="css/CameraSet.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/jquery-ui.min.js"></script> 
+		<script src="js/nav_footer.js"></script>
+		<script src="js/CameraSet.js"></script>
+	</head>
+	<body>
+		<!-- header for mobile phone -->
+	<div id="phone-nav">
+		<img  id="phone-nav-icon" src="icon/nav-list.png">
+		<nav class="wrapper">
+			<ul id="phone-nav-list">
+                       			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting">設定</a>
+					<ul id="setDetail">
+						<li><a href="ImageSet.html">影像</a></li>
+						<li><a href="CameraSet.html">攝影機</a></li>
+						<li><a href="SoundSet.html">聲音</a></li>
+						<li><a href="UserSet.html">使用者</a></li>
+						<li><a href="Network.html">網路</a></li>
+						<li><a href="EventSet.html">事件設定</a></li>
+						<li><a href="TimeSet.html">時間</a></li>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" id="login">登入</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Header  for  more then 769px-->
+	<header id="header" class="nav-fixed">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">
+			<ul>
+                  			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting" class="pseudo">設定</a>
+					<ul id="setDetail">
+						<div>
+						     <li><a href="ImageSet.html" id="ImageSet">影像</a></li>
+						     <li><a href="CameraSet.html" id="CameraSet">攝影機</a></li>
+						     <li><a href="SoundSet.html" id="SoundSet">聲音</a></li>
+						     <li><a href="UserSet.html" id="UserSet">使用者</a></li>
+						     <li><a href="NetworkSet.html" id="NetworkSet">網路</a></li>
+						     <li><a href="EventSet.html" id="EventSet">事件設定</a></li>
+						     <li><a href="TimeSet.html" id="TimeSet">時間</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" class="login">登入</a></li>
+			</ul>
+		</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fake header for banner img -->
+	<header id="header">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">				
+		</nav>
+	</header>
+	<!--**************************************************-->
+
+	<!--  Page content -->
+	<div id="pageContent">
+		<div id="CameraSet">
+			<div id="title"><img src="img/time_set.png"></div>
+			<div  id="player">
+				<video src="img/test.mp4" poster="img/bg_login.jpg"  class="video" id="video" controls>
+				</video>
+			</div>
+			<div class="WhiteBalance">
+			      <fieldset>
+				<p>白平衡：</p>
+				<div class="WhiteBalance_radio">
+				    
+					<input type="radio" name="whitebalance" id="auto" value="auto" class="ui-helper-hidden-accessible" checked ></input>
+					<label for="auto" >自動</label>
+
+					<input type="radio" name="whitebalance" id="daylight" value="daylight" class="ui-helper-hidden-accessible" ></input>
+					<label for="daylight" >日光</label>
+
+					<input type="radio" name="whitebalance" id="cloudy" value="cloudy" class="ui-helper-hidden-accessible" ></input>
+					<label for="cloudy" >陰天</label>
+
+					<input type="radio" name="whitebalance" id="tungsten" value="tungsten" class="ui-helper-hidden-accessible" ></input>
+					<label for="tungsten" >白熾燈</label>
+
+					<input type="radio" name="whitebalance" id="fluorescent" value="fluorescent" class="ui-helper-hidden-accessible" ></input>
+					<label for="fluorescent" >螢光燈</label>
+				</div>
+			      <fieldset>
+			</div>
+
+			<div class="Expose">
+			      <fieldset>
+				<p>曝光：</p>
+				<div class="Expose_radio">
+					<input type="radio" name="expose" id="minus2" value="minus2" class="ui-helper-hidden-accessible" checked ></input>
+					<label for="minus2" >-2</label>
+
+					<input type="radio" name="expose" id="minus1.5" value="minus1.5" class="ui-helper-hidden-accessible" ></input>
+					<label for="minus1.5" >-1.5</label>
+
+					<input type="radio" name="expose" id="minus1" value="minus1" class="ui-helper-hidden-accessible" ></input>
+					<label for="minus1" >-1</label>
+
+					<input type="radio" name="expose" id="minus0.5" value="minus0.5" class="ui-helper-hidden-accessible" ></input>
+					<label for="minus0.5" >-0.5</label>
+
+					<input type="radio" name="expose" id="zero" value="zero" class="ui-helper-hidden-accessible" ></input>
+					<label for="zero" >0</label>
+
+					<input type="radio" name="expose" id="add0.5" value="add0.5" class="ui-helper-hidden-accessible" ></input>
+					<label for="add0.5" >+0.5</label>
+
+					<input type="radio" name="expose" id="add1" value="add1" class="ui-helper-hidden-accessible" ></input>
+					<label for="add1" >+1</label>
+
+					<input type="radio" name="expose" id="add1.5" value="add1.5" class="ui-helper-hidden-accessible" ></input>
+					<label for="add1.5" >+1.5</label>
+
+					<input type="radio" name="expose" id="add2" value="add2" class="ui-helper-hidden-accessible" ></input>
+					<label for="add2" >+2</label>
+				</div>
+			      <fieldset>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

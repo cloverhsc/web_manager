@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NEZHA</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/nav_footer.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css"> 
+		<link rel="stylesheet" href="css/SoundSet.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/jquery-ui.min.js"></script> 
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/nav_footer.js"></script>
+		<script src="js/SoundSet.js"></script>
+	</head>
+	<body>
+		<!-- header for mobile phone -->
+	<div id="phone-nav">
+		<img  id="phone-nav-icon" src="icon/nav-list.png">
+		<nav class="wrapper">
+			<ul id="phone-nav-list">
+                       			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting">設定</a>
+					<ul id="setDetail">
+						<li><a href="ImageSet.html">影像</a></li>
+						<li><a href="CameraSet.html">攝影機</a></li>
+						<li><a href="SoundSet.html">聲音</a></li>
+						<li><a href="UserSet.html">使用者</a></li>
+						<li><a href="Network.html">網路</a></li>
+						<li><a href="EventSet.html">事件設定</a></li>
+						<li><a href="TimeSet.html">時間</a></li>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" id="login">登入</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Header  for  more then 769px-->
+	<header id="header" class="nav-fixed">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">
+			<ul>
+                  			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting" class="pseudo">設定</a>
+					<ul id="setDetail">
+						<div>
+						     <li><a href="ImageSet.html" id="ImageSet">影像</a></li>
+						     <li><a href="CameraSet.html" id="CameraSet">攝影機</a></li>
+						     <li><a href="SoundSet.html" id="SoundSet">聲音</a></li>
+						     <li><a href="UserSet.html" id="UserSet">使用者</a></li>
+						     <li><a href="NetworkSet.html" id="NetworkSet">網路</a></li>
+						     <li><a href="EventSet.html" id="EventSet">事件設定</a></li>
+						     <li><a href="TimeSet.html" id="TimeSet">時間</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" class="login">登入</a></li>
+			</ul>
+		</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fake header for banner img -->
+	<header id="header">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">				
+		</nav>
+	</header>
+	<!--**************************************************-->
+
+	<!--  Page content -->
+	<div id="pageContent">
+		<div id="SoundSetting">
+			<img src="img/time_set.png">
+			<p>
+				<span>壓縮格式：</span>
+				<span id="g711pcm">G.711PCM</span>
+			</p>
+			<div id="channel_1"> 
+				<fieldset>
+					<span>音頻1</span>
+					<div>
+						<input type="radio" name="switch1" id="on1" value="on" class="ui-helper-hidden-accessible" checked ></input>
+						<label for="on1" >開</label>
+
+						<input type="radio" name="switch1" id="off1" value="off" class="ui-helper-hidden-accessible" ></input>
+						<label for="off1" >關</label>
+					</div>
+				</fieldset>
+				<div class="SoundBar1">音量：
+				<div class="SoundRange"  id="SoundRange1"></div> 
+			<!--	<input type="range" value="80" id="SoundRange" name="SoundRange" class="ui-slider-horizontal"> -->
+		<!--	#show value of sound slider. # 
+				<span id="rg">80</span>
+				<script type="text/javascript">
+				function showValue(newValue){
+				document.getElementById("rg").innerHTML=newValue;
+				}
+			</script>	-->
+				</div>
+			</div> 
+			<div id="channel_2">
+				<fieldset>
+					<span>音頻2</span>
+					<div>
+						<input type="radio" name="switch2" id="on2" value="on" class="ui-helper-hidden-accessible" ></input>
+						<label for="on2">開</label>
+
+						<input type="radio" name="switch2" id="off2" value="off" class="ui-helper-hidden-accessible"  checked></input>
+						<label for="off2" >關</label>
+					</div>
+				</fieldset>
+				<div  class="SoundBar2">音量：
+					<div class="SoundRange"  id="SoundRange2"></div> 
+			<!--	<input type="range" value="80" id="SoundRange" name="SoundRange" class="ui-slider-horizontal">  -->
+					</div>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

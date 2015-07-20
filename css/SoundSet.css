@@ -1,0 +1,147 @@
+@charset "utf-8";
+#pageContent #SoundSetting{
+	width:100%;
+	font-family: Arial,Verdana,sans-serif;
+	font-size: 17px;
+	margin:10px auto;
+}
+#pageContent #SoundSetting img{
+	display: block;
+	margin:10px auto;
+
+}
+#pageContent #SoundSetting >p{
+	margin-top:30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	width:100%;
+}
+#pageContent #SoundSetting > p span:first-child{
+	margin-left:10%;
+}
+#g711pcm{
+	color:#fff;
+	background-color: #69a0d6;
+	border:1px solid #68A1E8;
+	border-radius: 5px;
+	padding:5px;
+	float: right;
+	right: 10%;
+	position:relative;
+	
+}
+#channel_1, #channel_2{
+	margin:30px auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+#channel_1 >fieldset  span:first-child , #channel_2 >fieldset  span:first-child{
+	margin-left:10%;
+}
+fieldset > div , .SoundRange{
+	position:relative;
+	float: right;
+	right:10%;
+}
+.SoundBar1 ,.SoundBar2{
+	margin-left:10%;
+	margin-top:20px;
+}
+.ui-slider-horizontal{
+	width:50%;
+	display: inline-block;
+	background:#69a0d6;
+}
+.SoundRange .ui-state-active{
+	background:#ffffff !important;
+}
+@media only screen and (min-width:769px){
+
+	/*show setting level 2  selection */
+	#nav #setDetail{
+		display:block;
+	}
+
+	#SoundSet::before{
+		content:"";
+		position:absolute;
+		border-style:solid;
+		border-color:#fff transparent;
+		border-width:0px 15px 15px 15px;
+		bottom:0px;
+	}
+	/*=======================*/
+	#pageContent{
+		top:50px;
+		position: relative;
+	}
+	#pageContent #SoundSetting img{
+	display: none;
+	margin:10px auto;
+
+	}
+	#pageContent #SoundSetting >p{
+		padding:0px;
+		border:0px;
+	}
+	
+	#pageContent #SoundSetting{
+		width:100%;
+		margin:10px auto;
+		top: 70px;
+		position: relative;
+		font-size: 27px;
+		color:#707070;
+		text-align: left;
+	}
+	#g711pcm{
+	float: none;
+	position:static;
+	}
+	#pageContent #SoundSetting img{
+		text-align: left;
+		margin-bottom:20px;
+		margin-left:10px;
+	}
+	#channel_1,#channel_2 {
+		margin:50px 0px 0px 0px;
+		padding:0px;
+		border:0px;
+	}
+	fieldset {
+		width:35%;
+		display:inline;
+		right:0px;
+		float: none;
+		margin-left:10%;
+	}
+	#channel_1 >fieldset  span:first-child , #channel_2 >fieldset  span:first-child{
+		margin:0;
+	}
+	.SoundBar1 ,  .SoundBar2{
+		width:40%;
+		display:inline;
+	}
+	.SoundRange{
+		float: none;
+		right:0;
+	}
+	.ui-slider-horizontal{
+		width:200px;
+		display: inline-block;
+		background:#69a0d6;
+	} 
+
+}
+
+@media only screen and (min-width:961px){
+	#pageContent #SoundSetting{
+		width:960px;
+		margin:10px auto;
+		top: 70px;
+		position: relative;
+		font-size: 27px;
+		color:#707070;
+		text-align: left;
+	}
+}

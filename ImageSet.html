@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NEZHA</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/nav_footer.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css"> 
+		<link rel="stylesheet" href="css/ImageSet.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/jquery-ui.min.js"></script> 
+		<script src="js/nav_footer.js"></script>
+		<script src="js/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/ImageSet.js"></script>
+	</head>
+	<body>
+		<!-- header for mobile phone -->
+	<div id="phone-nav">
+		<img  id="phone-nav-icon" src="icon/nav-list.png">
+		<nav class="wrapper">
+			<ul id="phone-nav-list">
+                       			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting">設定</a>
+					<ul id="setDetail">
+						<li><a href="ImageSet.html">影像</a></li>
+						<li><a href="CameraSet.html">攝影機</a></li>
+						<li><a href="SoundSet.html">聲音</a></li>
+						<li><a href="UserSet.html">使用者</a></li>
+						<li><a href="Network.html">網路</a></li>
+						<li><a href="EventSet.html">事件設定</a></li>
+						<li><a href="TimeSet.html">時間</a></li>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" id="login">登入</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Header  for  more then 769px -->
+	<header id="header" class="nav-fixed">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">
+			<ul>
+                  			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting" class="pseudo">設定</a>
+					<ul id="setDetail">
+						<div>
+						     <li><a href="ImageSet.html" id="ImageSet">影像</a></li>
+						     <li><a href="CameraSet.html" id="CameraSet">攝影機</a></li>
+						     <li><a href="SoundSet.html" id="SoundSet">聲音</a></li>
+						     <li><a href="UserSet.html" id="UserSet">使用者</a></li>
+						     <li><a href="NetworkSet.html" id="NetworkSet">網路</a></li>
+						     <li><a href="EventSet.html" id="EventSet">事件設定</a></li>
+						     <li><a href="TimeSet.html" id="TimeSet">時間</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" class="login">登入</a></li>
+			</ul>
+		</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fake header for banner img -->
+	<header id="header">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">				
+		</nav>
+	</header>
+	<!--**************************************************-->
+
+	<!--  Page content -->
+	<div id="pageContent">
+		<div id="ImageSet">
+			<div id="title"><img src="img/time_set.png"></div>
+			<div  id="player">
+				<video src="img/test.mp4" poster="img/bg_login.jpg"  class="video" id="video" controls>
+				</video>
+			</div>
+			<fieldset>
+			       <div class="no2-stream" >
+			       
+				<input type="checkbox" name="no2stream" id="use-no2-stream"  value="no2stream" ></input>
+				<label for="use-no2-stream" class="use-no2-stream">啟用第二影像串流(支援3GPPP)</label>
+			       
+			       </div>
+			</fieldset>
+
+			<div class="stream1">
+			       <fieldset>
+				<p>串流1：</p>
+				<div class="resolution">
+					<p>解析度：</p>
+					<div class="resolution-opt">
+						<input type="radio" name="resolution" id="res-1280-720" value="res-1280-720"></input>
+						<label for="res-1280-720">1280X720</label>
+
+						<input type="radio" name="resolution" id="SVGA" value="svga" checked></input>
+						<label for="SVGA">SVGA</label>
+
+						<input type="radio" name="resolution" id="VGA" value="vga"></input>
+						<label for="VGA">VGA</label>
+
+						<input type="radio" name="resolution" id="QVGA" value="qvga"></input>
+						<label for="QVGA">QVGA</label>
+
+						<input type="radio" name="resolution" id="QQVGA" value="qqvga"></input>
+						<label for="QQVGA">QQVGA</label>
+					</div>
+				</div>
+			       </fieldset>
+
+			       <fieldset>
+				<div class="compress">
+					<p>壓縮格式：</p>
+					<div class="compress-format">
+						<input type="radio" name="compress" id="mpeg-4" value="mpeg4" checked></input>
+						<label for="mpeg-4">MPEG-4</label>
+
+						<input type="radio" name="compress" id="h264" value="h264"></input>
+						<label for="h264">H.264</label>
+					</div>
+				</div>
+			       </fieldset>	
+
+			       <fieldset>
+				<div class="fps">
+					<p>畫面播放速率：</p>
+					<div class="fps-rate">
+						<input type="radio" name="fps" id="fps5" value="fps5"></input>
+						<label for="fps5">5</label>
+
+						<input type="radio" name="fps" id="fps7.5" value="fps7.5"></input>
+						<label for="fps7.5">7.5</label>
+
+						<input type="radio" name="fps" id="fps10" value="fps10"></input>
+						<label for="fps10">10</label>
+
+						<input type="radio" name="fps" id="fps15" value="fps15" checked></input>
+						<label for="fps15">15</label>
+
+						<input type="radio" name="fps" id="fps20" value="fps20"></input>
+						<label for="fps20">20</label>
+
+						<input type="radio" name="fps" id="fps25" value="fps25"></input>
+						<label for="fps25">25</label>
+
+						<input type="radio" name="fps" id="fps30" value="fps30"></input>
+						<label for="fps30">30</label>
+
+					</div>
+				</div>
+			       </fieldset>
+
+			       <fieldset>
+				<div class="qulity">
+					<p>壓縮品質：</p>
+					<div class="qulity-opt">
+						<input type="radio" name="qulity" id="qulity64k" value="qulity64k"></input>
+						<label for="qulity64k">64k</label>
+
+						<input type="radio" name="qulity" id="qulity128k" value="qulity128k"></input>
+						<label for="qulity128k">128k</label>
+
+						<input type="radio" name="qulity" id="qulity256k" value="qulity256k"></input>
+						<label for="qulity256k">256k</label>
+
+						<input type="radio" name="qulity" id="qulity512k" value="qulity512k" checked></input>
+						<label for="qulity512k">512k</label>
+
+						<input type="radio" name="qulity" id="qulity1M" value="qulity1M"></input>
+						<label for="qulity1M">1M</label>
+
+						<input type="radio" name="qulity" id="qulity1.5M" value="qulity1.5M"></input>
+						<label for="qulity1.5M">1.5M</label>
+
+						<input type="radio" name="qulity" id="qulity3M" value="qulity3M"></input>
+						<label for="qulity3M">3M</label>
+					</div>
+				</div>
+			       </fieldset>
+			</div>
+
+			<div class="image-qulity">
+				<fieldset>
+				<p>影像偏好：</p>
+				<div class="image-qulity-bar" id="image-qulity-bar">
+				<br>
+				<span class="smooth">順暢度佳</span>
+				<span class="high-pix">畫質佳</span>
+				</div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

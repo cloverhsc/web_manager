@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NEZHA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/nav_footer.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css"> 
+        <link rel="stylesheet" href="css/Monitor.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/iscroll-lite.js"></script>
+        <script src="js/jquery-ui.min.js"></script> 
+        <script src="js/nav_footer.js"></script>
+        <script src="js/Monitor.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/setting.js"></script>
+    </head>
+    <body>
+        <!-- header for mobile phone -->
+    <div id="phone-nav">
+        <img  id="phone-nav-icon" src="icon/nav-list.png">
+        <nav class="wrapper">
+            <ul id="phone-nav-list">
+                                <li><a href="index.html">首頁</a></li>
+                <li><a href="Monitor.html">監控</a></li>
+                <li><a href="#">事件檢視</a></li>
+                <li ><a href="#" id="setting">設定</a>
+                    <ul id="setDetail">
+                        <li><a href="ImageSet.html">影像</a></li>
+                        <li><a href="CameraSet.html">攝影機</a></li>
+                        <li><a href="SoundSet.html">聲音</a></li>
+                        <li><a href="UserSet.html">使用者</a></li>
+                        <li><a href="Network.html">網路</a></li>
+                        <li><a href="EventSet.html">事件設定</a></li>
+                        <li><a href="TimeSet.html">時間</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">維護</a></li>
+                <li id="LoginButtom"><a href="#LoginBox" id="login">登入</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Header  for  more then 769px-->
+    <header id="header" class="nav-fixed">
+        <h1><a href="#">nezha</a></h1>
+        <nav id="nav">
+            <ul>
+                            <li><a href="index.html">首頁</a></li>
+                <li><a href="Monitor.html">監控</a></li>
+                <li><a href="#">事件檢視</a></li>
+                <li ><a href="#" id="setting">設定</a>
+                    <ul id="setDetail">
+                        <div>
+                             <li><a href="ImageSet.html" id="ImageSet">影像</a></li>
+                             <li><a href="CameraSet.html" id="CameraSet">攝影機</a></li>
+                             <li><a href="SoundSet.html" id="SoundSet">聲音</a></li>
+                             <li><a href="UserSet.html" id="UserSet">使用者</a></li>
+                             <li><a href="NetworkSet.html" id="NetworkSet">網路</a></li>
+                             <li><a href="EventSet.html" id="EventSet">事件設定</a></li>
+                             <li><a href="TimeSet.html" id="TimeSet">時間</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="#">維護</a></li>
+                <li id="LoginButtom"><a href="#LoginBox" class="login">登入</a></li>
+            </ul>
+        </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- fake header for banner img -->
+    <header id="header">
+        <h1><a href="#">nezha</a></h1>
+        <nav id="nav">              
+        </nav>
+    </header>
+    <!--**************************************************-->
+
+    <!--  Page content -->
+    <div id="pageContent">
+        <div id="Monitor">
+                <figure id="title"><img src="icon/tab_arrow.png"><figcaption>監控</figcaption></figure>
+                <!--  video streaming  location-->
+                <section id="player">
+                    <video src="img/test.mp4" poster="img/bg_login.jpg" class="video" id="video" controls>
+                    </video>
+                </section>
+
+                <section  class="Func_Bar1">
+                        <!--  click then link to photo graphic web and show lastest photo pic-->
+                        <div class="Link_And_Show_Photo">
+                            <a href="index.html">
+                                <section  class="Goto_Photo_Icon">
+                                  <img src="icon/monitor_video_storage.png">
+                                </section>
+                                <section class="SnapShoot">
+                                    <img src="img/shoot.png">
+                                </section>
+                            </a>
+                        </div>
+
+                        <!--  Record,Microphone,photo button  this area will disppear when cell phone mode -->
+                        <div class="Stream_Life_Func ">
+                            <span>
+                                <img src="icon/monitor_camera_n.png" class="SnapShoot_Icon">
+                                <img src="icon/monitor_camera_p.png" class="SnapShoot_Icon">
+                            </span>
+                            <span>
+                                <img src="icon/monitor_microphone_n.png" class="Microphone_Icon">
+                                <img src="icon/monitor_microphone_p.png" class="Microphone_Icon">
+                            </span>
+                            <span>
+                                <img src="icon/monitor_video_n.png" class="Record_Icon">
+                                <img src="icon/monitor_video_p.png" class="Record_Icon">
+                            </span>
+                        </div>
+
+                            <!--  click then link to photo graphic web and show lastest photo pic-->
+                        <div class="Link_And_Show_Record">
+                            <a href="index.html">
+                                <section class="Record">
+                                    <img src="img/shoot.png">
+                                </section>
+                                <section  class="Goto_Record_Icon">
+                                    <img src="icon/monitor_camera_storage.png">
+                                </section>
+                            </a>
+                        </div>
+
+                        </div>
+                </section>
+
+                        <!-- fine tune Camera button -->
+                        <div class="Camera_Func">
+                            <section>
+                                <span>
+                                    <img src="icon/monitor_cameraswitch_off.png" class="Camera_Switch " >
+                                    <img src="icon/monitor_cameraswitch_on.png" class="Camera_Switch " >
+                                </span>
+                                <span>
+                                    <img src="icon/monitor_voice_off.png"  class="Voice_Switch ">
+                                    <img src="icon/monitor_voice_on.png"  class="Voice_Switch ">
+                                </span>
+                                <span>
+                                    <img src="icon/monitor_zoom_off.png" class="Zoom_Switch">
+                                    <img src="icon/monitor_zoom_on.png" class="Zoom_Switch">
+                                </span>
+                                <span>
+                                    <img src="icon/monitor_whitebalance_off.png" class="Whitebalance_Switch">
+                                    <img src="icon/monitor_whitebalance_on.png" class="Whitebalance_Switch">
+                                </span>
+                                <span>
+                                    <img src="icon/monitor_flashlight_off.png" class="Flashlight_Switch">
+                                    <img src="icon/monitor_flashlight_on.png" class="Flashlight_Switch">
+                                </span>
+                                <span>
+                                    <img src="icon/monitor_nightvision_off.png" class="Nightvision_Switch ">
+                                    <img src="icon/monitor_nightvision_on.png" class="Nightvision_Switch ">
+                                </span>
+                            </sectioin>
+                        </div>
+                        <!-- In mobile mode  the move  arrow for camera function icon bar-->
+                        <div class="Arrow">
+                            <img src="icon/monitor_setup_arrow_left.png" id="Forward"></img>
+                            <img src="icon/monitor_setup_arrow_right.png" id="Backward"></img>
+                        </div>
+                        <!--  Each camera function Value  area -->
+                        <section class="Camera_Func_Value">
+                            <fieldset>
+                                <div class="Camera_Setting">
+                                    <span class="Func_Name">切換鏡頭</span>
+                                    <input type="radio" name="Switch_Cam" id="Switch_A_Cam" value="Switch_A_Cam" checked></input>
+                                    <label for="Switch_A_Cam" class="Switch_Cam" >A鏡頭</label>
+
+                                    <input type="radio" name="Switch_Cam" id="Switch_B_Cam" value="Switch_B_Cam"></input>
+                                    <label for="Switch_B_Cam" class="Switch_Cam">B鏡頭</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="Voice_Setting">
+                                    <span class="Func_Name">音量</span>
+                                    <div class="Sound-Bar" id="Sound-Bar"></div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="Zoom_Setting">
+                                    <span class="Func_Name">變焦</span>
+                                    <div class="Zoom-Bar" id="Zoom-Bar"></div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <article class="Func_Name Wb_Title">白平衡</article>
+                                <div class="Whitebalance_Setting">
+                                    <section>
+                                        <input type="radio" name="White_Balance" id="Wb_Auto" value="Wb_Auto" checked></input>
+                                        <label for="Wb_Auto" class="White_Balance" >自動</label>
+
+                                        <input type="radio" name="White_Balance" id="Daylight" value="Daylight" ></input>
+                                        <label for="Daylight" class="White_Balance" >白天</label>
+
+                                        <input type="radio" name="White_Balance" id="Cloudy" value="Cloudy" ></input>
+                                        <label for="Cloudy" class="White_Balance" >陰天</label>
+
+                                        <input type="radio" name="White_Balance" id="Tungsten" value="Tungsten" ></input>
+                                        <label for="Tungsten" class="White_Balance" >白熾燈</label>
+
+                                        <input type="radio" name="White_Balance" id="Fluorescent" value="Fluorescent" ></input>
+                                        <label for="Fluorescent" class="White_Balance" >螢光燈</label>
+                                    </section>
+                                </div>
+                                <div class="Wb_Arrow">
+                                    <img src="icon/monitor_setuplist_arrow_right.png" id="Wb_Forward"></img>
+                                    <img src="icon/monitor_setuplist_arrow_left.png" id="Wb_Backward"></img>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <article class="Func_Name  Flashlight_Title">光源</article>
+                                <div class="Flashlight_Setting">
+                                    <section>
+                                        <input type="radio" name="Flashlight" id="Light_Auto" value="Light_Auto" ></input>
+                                        <label for="Light_Auto" class="Flashlight" >自動</label>
+
+                                        <input type="radio" name="Flashlight" id="Light_On" value="Light_On" ></input>
+                                        <label for="Light_On" class="Flashlight" >開啟</label>
+
+                                        <input type="radio" name="Flashlight" id="Light_Off" value="Light_Off"  checked></input>
+                                        <label for="Light_Off" class="Flashlight" >關閉</label>
+                                    </section>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                            <div class="Nightvision_Setting">
+                                <span class="Func_Name">夜視</span>
+                                    <input type="radio" name="Night_Vision" id="Night_Vision_On" value="Night_Vision_On" ></input>
+                                    <label for="Night_Vision_On" class="Night_Vision" >開啟</label>
+
+                                    <input type="radio" name="Night_Vision" id="Night_Vision_Off" value="Night_Vision_Off" checked></input>
+                                    <label for="Night_Vision_Off" class="Night_Vision" >關閉</label>
+                            </div>
+                            </fieldset>
+                        </section>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,397 @@
+@charset "utf-8";
+*{
+	font-family:Arial,Verdana,sans-serif;
+}
+
+#pageContent {
+    width:100%;
+    font-size: 17px;
+    margin:10px auto;
+    position: relative;
+}
+
+#title{
+    width:100%;
+    overflow: auto;
+    position:relative;
+}
+#title > img, #title  figcaption{
+    margin:0px 10px 5px 0px;
+    float:right;
+}
+        #title  figcaption {
+            font-size: 21px;
+            position: absolute;
+            right: 32px;
+            top: -1px;
+            border-radius: 5px;
+            padding: 5px;
+            color: rgb(85, 95, 102);
+        }
+        #title > img{
+            width:32px;
+            height:32px;
+        }
+
+#player{
+    width:100%;
+    background-color: #69a0d6;
+}
+  #video , .Func_Bar1{
+    display:block;
+    width:360px;
+    margin:0px auto;
+    position:relative;
+    text-align: center;
+   }
+
+   .Func_Bar1{
+        margin-top:10px;
+        position: relative;
+        margin:5px auto;
+   }
+
+   /* Snapshoot and link to photo web*/
+   .Link_And_Show_Photo,  .Link_And_Show_Record{
+    width: 30px;
+    position:relative;
+    float: left;
+    top:40px;
+    margin:0px 0px 0px 5px;
+   }
+   .Link_And_Show_Record{
+        float: right;
+        margin:0px 5px 0px 0px;
+   }
+                  
+            .Goto_Photo_Icon > img , .Goto_Record_Icon > img{
+                    width:30px;
+                    height: 30px;
+             }
+
+            .SnapShoot,.Record{
+                display:none;
+            }
+/* Stream life function Icon */
+.Stream_Life_Func {
+        width:300px;
+        margin:5px auto;
+        display:inline;
+}
+        .SnapShoot_Icon , .Record_Icon{
+          width:95px;
+          height:70px;
+          cursor: pointer;
+        }
+        .Microphone_Icon{
+            width:70px;
+            height:70px;
+            cursor: pointer;
+        }
+        .Stream_Life_Func span img:first-child{
+            position: absolute;
+        } 
+        .Stream_Life_Func span img:nth-child(2){
+            opacity:0;
+        }      
+
+     
+
+/* Camera function Icon Bar  */
+.Camera_Func{
+    width:297px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px auto;
+
+}
+        /* let function bar be center if different width*/
+        .Camera_Func section{
+            width:450px;
+            margin:0px auto;
+            position:relative;
+        }
+
+        .Camera_Func  img{
+            width:70px;
+            height: 70px;
+            cursor:pointer;
+        }
+
+         .Camera_Func span img:first-child{
+            position: absolute;
+        } 
+        .Camera_Func span img:nth-child(2){
+            opacity:0;
+        }      
+            /* move arrow  for point out  camera function bar*/
+        .Arrow{
+            position: relative;
+        }
+        #Forward,#Backward{
+            position:absolute;
+            cursor: pointer;
+        }
+        #Forward{
+            bottom: 26px;
+        }
+        #Backward{
+            right: 0px;
+            bottom:26px;
+        }
+   /* camera function value area*/
+   .Camera_Func_Value{
+    width:100%;
+    margin:5px auto;
+    background-color: #F0F0F0;
+    height: 70px;
+    position:relative;
+   }
+            .Camera_Setting,
+            .Voice_Setting,
+            .Zoom_Setting,
+            .Whitebalance_Setting,
+            .Flashlight_Setting,
+            .Nightvision_Setting{
+                width:100%;
+                position: relative;
+                margin-top:10px;
+                text-align: center;
+            }
+            .Func_Name{
+                color:#9f9f9f;
+                font-size:25px;
+                position:relative;
+                top:5px;
+            }
+
+           .Camera_Func_Value fieldset{
+                display: none;
+                text-align: center;
+                width:360px;
+                margin:0px auto;
+            }
+            /*radio style : Camera Switch & White balance  & Flashlight &Night vision*/
+            .Switch_Cam,
+            .White_Balance,
+            .Flashlight,
+            .Night_Vision{
+                width:90px;
+                position:relative;
+                background: #F0F0F0;
+                border: 3px solid #ccc;
+                border-radius: 50px;
+            }
+            /* radio active style*/
+            .ui-state-active{
+                background:#F0F0F0;
+                border:3px solid #69a0d6;
+                color:#69a0d6;
+            }
+
+            /* Voice of sound bar  , Zoom of  zoom bar*/
+            .Sound-Bar,
+            .Zoom-Bar{
+                width:70%;
+                margin-top: 10px;
+                background:#69a0d6;
+                display: inline-block;
+            }
+
+            /*  White balance  */
+            .Wb_Title,
+            .Flashlight_Title{
+                display:inline-block;
+                margin:15px 5px;
+                float: left;
+            }
+            .Whitebalance_Setting{
+                width:212px;
+                position:relative;
+                overflow: hidden;
+                margin:10px auto;
+            }
+            .Whitebalance_Setting > section{
+                width:636px;
+                position:relative;
+                text-align: left;
+            }
+            .White_Balance{
+                width:100px;
+            }
+                    .Wb_Arrow{
+                        position: relative;
+                    }
+                    #Wb_Forward,
+                    #Wb_Backward{
+                        position:absolute;
+                        cursor: pointer;
+                    }
+                    #Wb_Forward{
+                        top:-45px;
+                        left:85px;
+                    }
+                    #Wb_Backward{
+                        right:3px;
+                        top:-45px;
+                    }
+            /*-- Flashlight --*/
+
+
+@media only screen and (min-width:449px){
+        .Camera_Func section{
+            left:0% !important;
+        }
+        .Arrow{
+            display: none;
+        }
+        /* Camera function option scop*/
+         .Camera_Func_Value fieldset{
+                width:450px;
+            }
+        .Camera_Func{
+            width:100%;
+        }
+        /* Switch lens  button & Night Vision*/
+        .Switch_Cam,
+        .Night_Vision{
+            width:30%;
+        }
+
+        /* Flashlight option button*/
+        .Flashlight{
+            width:25%;
+        }
+}
+
+
+@media only screen and (min-width:490px){
+	#video{
+		width:480px;
+	}
+            .Func_Bar1{
+                width:490px;
+            }
+            /* Camera function bar option */
+            .Camera_Func_Value fieldset{
+                width:490px;
+            }
+            /*White balance option view scop width*/
+            .Whitebalance_Setting{
+                width:318px;
+            }
+}
+@media only screen and (min-width:720px){
+	#video{
+		width:720px;
+	}
+               /* change width 320 to 730px*/
+            .Func_Bar1{
+                width:720px;
+            }
+               /* ink to photo web or Record web*/
+            .Link_And_Show_Photo , .Link_And_Show_Record{
+                width:210px;
+                top:0px;
+           }
+                /*fixed  link icon area width*/
+            .Goto_Photo_Icon, 
+            .Goto_Record_Icon{
+                width:20%;
+                position: absolute;
+                bottom:0px;
+            }
+                .Goto_Record_Icon{
+                    right:0px;
+                }
+           /* show snapshoot and record  miniature */
+           .SnapShoot,
+           .Record{
+                display:inline;
+                position: relative;
+           }
+
+             .SnapShoot > img , .Record>img{
+                   width:104px;
+                   height: 74px;
+             }
+        /*Camera function bar*/
+            .Camera_Func{
+                margin:10px auto;
+            }
+            .Camera_Func section,
+            .Camera_Func_Value fieldset{
+                width:720px;
+            }
+
+            .Camera_Func section span{
+                margin-right:45px;
+                }
+             .Camera_Func section span:first-child{
+                margin-left:20px;
+             }
+        /* Camera functiion  option area  */
+            .Camera_Setting,
+            .Voice_Setting,
+            .Zoom_Setting,
+            .Whitebalance_Setting,
+            .Flashlight_Setting,
+            .Nightvision_Setting{
+                text-align: left;
+            }
+            .Func_Name{
+                margin: 0px 20px;
+            }
+                /* Switch camera len button & Night vision */
+                .Switch_Cam,
+                .Night_Vision{
+                    width:25%;
+                    margin:5px 7%;
+                }
+
+                /* voice sound bar & Zoom bar */
+                .Sound-Bar,
+                .Zoom-Bar{
+                    margin:5px 5%;
+                }
+                /* white balance option */
+                .Wb_Arrow{
+                    display: none;
+                }
+                .Wb_Title,
+                .Flashlight_Title{
+                    margin:15px 15px;
+                }
+                /* Scope of can be viewed  WB options*/
+                .Whitebalance_Setting{
+                    width:580px;
+                }
+                .White_Balance{
+                    margin:5px 5px;
+                }
+                .Flashlight{
+                    width:20%;
+                    margin:5px 4%;
+                }
+                /* Flash light options */
+}
+
+@media only screen and (min-width:769px){
+                /*----  hide  title information for tablet ---*/
+                #title{
+                    display:none;
+                }
+
+}
+
+@media only screen and (min-width:961px){
+	#pageContent{
+		width:100%;
+	}
+            .Func_Bar1{
+                margin:15px auto;
+            }
+            .Camera_Func{
+                margin:15px auto;
+            }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NEZHA</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/nav_footer.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css"> 
+		<link rel="stylesheet" href="css/TimeSet.css">
+		<link rel="stylesheet" href="css/login.css">
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/iscroll-lite.js"></script>
+		<script src="js/jquery-ui.min.js"></script> 
+		<script src="js/nav_footer.js"></script>
+		<script src="js/timezones.full.min.js"></script>
+		<script src="js/TimeSet.js"></script>
+	</head>
+	<body>
+		<!-- header for mobile phone -->
+	<div id="phone-nav">
+		<img  id="phone-nav-icon" src="icon/nav-list.png">
+		<nav class="wrapper">
+			<ul id="phone-nav-list">
+                       			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting">設定</a>
+					<ul id="setDetail">
+						<li><a href="ImageSet.html">影像</a></li>
+						<li><a href="CameraSet.html">攝影機</a></li>
+						<li><a href="SoundSet.html">聲音</a></li>
+						<li><a href="UserSet.html">使用者</a></li>
+						<li><a href="Network.html">網路</a></li>
+						<li><a href="EventSet.html">事件設定</a></li>
+						<li><a href="TimeSet.html">時間</a></li>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" id="login">登入</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Header  for  more then 769px-->
+	<header id="header" class="nav-fixed">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">
+			<ul>
+                  			<li><a href="index.html">首頁</a></li>
+				<li><a href="Monitor.html">監控</a></li>
+				<li><a href="#">事件檢視</a></li>
+				<li ><a href="#" id="setting" class="pseudo">設定</a>
+					<ul id="setDetail">
+						<div>
+						     <li><a href="ImageSet.html" id="ImageSet">影像</a></li>
+						     <li><a href="CameraSet.html" id="CameraSet">攝影機</a></li>
+						     <li><a href="SoundSet.html" id="SoundSet">聲音</a></li>
+						     <li><a href="UserSet.html" id="UserSet">使用者</a></li>
+						     <li><a href="NetworkSet.html" id="NetworkSet">網路</a></li>
+						     <li><a href="EventSet.html" id="EventSet">事件設定</a></li>
+						     <li><a href="TimeSet.html" id="TimeSet">時間</a></li>
+						</div>
+					</ul>
+				</li>
+				<li><a href="#">維護</a></li>
+				<li id="LoginButtom"><a href="#LoginBox" class="login">登入</a></li>
+			</ul>
+		</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fake header for banner img -->
+	<header id="header">
+		<h1><a href="#">nezha</a></h1>
+		<nav id="nav">				
+		</nav>
+	</header>
+	<!--**************************************************-->
+
+	<!--  Page content -->
+	<div id="pageContent">
+		<div id="TimeSet">
+			<div id="title"><img src="img/time_set.png"></div>
+			<p>目前設定的日期與時間</p>
+			<div id="yyyymmdd">2015年6月5日</div>
+			<div id="apm">上午</div>
+			<div id="HHMM">11:57</div>
+			<br></br>
+			<div id="use_24hr"><input type="checkbox" name="TimeSetting" value="24hr">使用24小時格式。</br></div>
+			<div id="auto_setting"><input type="checkbox" name="TimeSetting" value="auto" id="auto" checked="checked">自動設定時區、日期和時間。</div>
+			<form action="" name="timeset" method="post">
+				<div class="manual">
+					<p id="manualTimeZone">手動設定</p>
+					<label for="timezone">時區：</label>
+					<select name="timezone" class="timezone">
+					</select>
+				</div>
+			</form>
+		</div>
+	</div>
+	</body>
+</html>

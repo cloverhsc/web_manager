@@ -1,0 +1,123 @@
+@charset "utf-8";
+*{
+	font-family:Arial,Verdana,sans-serif;
+}
+#pageContent {
+	width:100%;
+	font-size: 17px;
+	margin:10px auto;
+}
+/*Title's image*/
+#title{
+	width:100%;
+	overflow: auto;
+}
+#title > img{
+	display:block;
+	margin:10px 20px 10px;
+	float:right;
+}
+
+/* stream container*/
+#player{
+	margin:10px auto;
+	width:100%;
+}
+   
+   #video{
+   	display:block;
+   	width:360px;
+   	margin:0px auto;
+   }
+
+/*White Balance*/
+.WhiteBalance{
+	margin:30px auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.Expose{
+	margin:30px auto;
+	padding-bottom: 30px;
+}
+	.WhiteBalance >fieldset  p , .Expose >fieldset  p{
+		margin-left:10%;
+	}
+
+	.WhiteBalance_radio, .Expose_radio{
+		margin:10px auto;
+		position:relative;
+		float: right;
+		width:90%;
+	}
+
+	.ui-button > .ui-button-text{
+		font-size:17px;
+		padding:5px;
+	}
+
+/* video resolution for 480*/
+@media only screen and (min-width:490px){
+	#video{
+		width:480px;
+	}
+}
+
+/* change button to normal size*/
+@media only screen and (min-width:600px){
+	.ui-button > .ui-button-text{
+		padding:0.4em 1em !important;
+	}
+}
+@media only screen and (min-width:730px){
+	#video{
+		width:720px;
+	}
+}
+@media only screen and (min-width:769px){
+
+	/*--- link of setting navigator ----*/
+	#nav #setDetail{
+		display:block;
+	}
+
+
+	#pageContent{
+		top:130px;
+		position: relative;
+	}
+		
+
+	/*----  hide image ---*/
+	#title{
+		display:none;
+	}
+
+	/*--- white trigger on 2's nav  ---*/
+	#CameraSet::before{
+		content:"";
+		position:absolute;
+		border-style:solid;
+		border-color:#fff transparent;
+		border-width:0px 15px 15px 15px;
+		bottom:0px;
+	}
+
+	.WhiteBalance >fieldset p , .Expose >fieldset p{
+		display:inline;
+	}
+
+	.WhiteBalance_radio, .Expose_radio {
+		display:inline;
+		float:none;
+	}
+	
+}
+
+@media only screen and (min-width:961px){
+	#pageContent{
+		width:960px;
+		margin:0px auto;
+	}
+
+}
